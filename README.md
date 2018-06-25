@@ -9,10 +9,19 @@ General Features:
 > CRUD for students 
 > Notification System for 
 >> Holidays
->> Exam schedules 
+>> 
+>> Exam schedules
+>>  
 >> Fee Reminder
+>> 
 > Attendance Regularization
-> Historical Records
-> Overall Student Evaluation
-> Machine Learning based suggestions for attitude and career development
 > 
+> Historical Records
+> 
+> Overall Student Evaluation
+> 
+> Machine Learning based suggestions for attitude and career development
+>
+>  Student dash board page for parents
+>  
+>  Feedback Mechanism
