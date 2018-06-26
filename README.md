@@ -25,3 +25,7 @@ General Features:
 >  Student dash board page for parents
 >  
 >  Feedback Mechanism
+>
+>  Students location based analysis of where you can provide cab and from which cluster more people are coming
+
+Will update when I complete features one by one.
