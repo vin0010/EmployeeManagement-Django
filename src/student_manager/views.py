@@ -15,4 +15,9 @@ def get_student(request, id=0):
 
 
 def get_all_student(request):
-    return HttpResponse("<h1>All student<h1>")
+    students = Student.objects.all()
+    context = {
+        "students": students
+    }
+    # return HttpResponse("<h1>All student<h1>")
+    return render(request, "view_all_students.html", context)
