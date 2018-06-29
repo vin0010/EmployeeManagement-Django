@@ -9,6 +9,7 @@ class Student(models.Model):
     last_name = models.CharField(max_length=30)
     father_name = models.CharField(max_length=60)
     age = models.SmallIntegerField(null=False)
+    dob = models.DateField(default=None)
     created = models.DateTimeField(auto_now=False, auto_now_add=True)
     modified = models.DateTimeField(auto_now=True, auto_now_add=False)
     address = models.TextField(default="")
