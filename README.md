@@ -6,7 +6,7 @@ I am developing this "Student Management System" application to develop my gener
 Features I am planning to add to this Application
 
 General Features:	
-> CRUD for students 
+> CRUD for students - In progress - 70% completed
 > Notification System for 
 >> Holidays
 >> 
@@ -29,3 +29,4 @@ General Features:
 >  Students location based analysis of where you can provide cab and from which cluster more people are coming
 
 Will update when I complete features one by one.
+
