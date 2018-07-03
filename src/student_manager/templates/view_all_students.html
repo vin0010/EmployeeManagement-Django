@@ -23,7 +23,9 @@
         <tbody>
         {% for i in students %}
         <tr>
-            <td>{{i.id}}</td>
+            <td><a href="/student/{{i.id}}">{{i.id}}</a></td>
+            <td><a href='{% url "get_student" id=i.id%}'>{{i.id}}</a></td>
+            <td><a href={{ i.get_absolute_url }}>{{i.id}}</a></td>
             <td>{{i.first_name}}</td>
             <td>{{i.last_name}}</td>
             <td>{{i.age}}</td>
