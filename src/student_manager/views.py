@@ -13,8 +13,17 @@ def get_student(request, id=0):
     return render(request, "view_student.html", context)
     # return HttpResponse("<h1>Welcome Student<h1>")
 
+def get_student1(request, id=0):
+    student_instance = Student.objects.get(id=id)
+    context = {
+        "student": student_instance
+    }
+    return render(request, "view_student.html", context)
+    # return HttpResponse("<h1>Welcome Student<h1>")
 
 def create_student(request):
+    if request.method == "POST":
+        print(request.POST)
     form = StudentForm()
     context = {
         "form":form
