@@ -6,7 +6,7 @@ I am developing this "Student Management System" application to develop my gener
 Features I am planning to add to this Application
 
 General Features:	
-> CRUD for students - In progress - 90% completed
+> CRUD for students - In progress - 90% completed 
 > Notification System for 
 >> Holidays
 >> 
