@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Student Create Form</title>
-    <form method="post">{%csrf_token%}
+    {% for error,message in form.errors.items %}
+    	{{ error }}
+    	{{ message }}
+    {% endfor %}
+    <form method="post">
+    	{%csrf_token%}
         {{ form.as_p }}
-        <input type="submit" value="create student"/>
+        <button type="submit">Create</button>
     </form>
         </head>
 <body>

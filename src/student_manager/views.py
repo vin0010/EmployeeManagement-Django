@@ -24,7 +24,13 @@ def get_student1(request, id=0):
 def create_student(request):
     if request.method == "POST":
         print(request.POST)
+        form = StudentForm(request.POST, instance=Student())
+        if form.is_valid():
+            form.save()
+        else:
+            return render(request, "create_student.html", {"form":form})
     form = StudentForm()
+
     context = {
         "form":form
     }
