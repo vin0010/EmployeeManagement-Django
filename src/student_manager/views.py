@@ -24,7 +24,7 @@ def get_student1(request, id=0):
 def create_student(request):
     if request.method == "POST":
         print(request.POST)
-        form = StudentForm(request.POST, instance=Student())
+        form = StudentForm(request.POST or None, instance=Student())
         if form.is_valid():
             form.save()
         else:
