@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .models import Student
 
@@ -44,3 +44,13 @@ def get_all_student(request):
     }
     # return HttpResponse("<h1>All student<h1>")
     return render(request, "view_all_students.html", context)
+
+def update_student(request, id=None):
+    student_instance = get_object_or_404(Student, id=id)
+    form = StudentForm(request.POST or None, instance=student_instance)
+    context = {
+        "student": student_instance,
+        "form" : form
+    }
+    return render(request, "create_student.html", context)
+    # return HttpResponse("<h1>Welcome Student<h1>")
