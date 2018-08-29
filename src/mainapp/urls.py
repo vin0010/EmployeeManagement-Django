@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^student/$', views.get_student),
     url(r'^student/', include("student_manager.urls")),
+    url(r'', views.home_page, name='welcome.html')
 ]

@@ -54,3 +54,6 @@ def update_student(request, id=None):
     }
     return render(request, "create_student.html", context)
     # return HttpResponse("<h1>Welcome Student<h1>")
+
+def home_page(request):
+    return render(request, "welcome.html")
